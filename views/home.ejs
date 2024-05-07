@@ -1,1 +1,87 @@
-<H1>HI you are now routed towards home.ejs page</H1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <style>
+         table{
+            width: 100%;
+            border-collapse: collapse;   
+            margin-top: 200px;
+            font-size: 25px;
+            text-align: left;
+
+          }
+        th,td{
+            border: 3px solid black;
+            padding: 20px;
+            font-size: 25px;
+        }
+        th{
+            background-color: lightskyblue;
+            padding: 20px;
+            font-size:30px;
+
+        }
+       button
+        {
+    background-color: yellow;
+    color:black;
+    font-size: 25px;
+    width: 150px;
+    height: 35px;
+    border-radius: 3px;
+
+        }
+    </style>
+
+<body>
+   
+  <%- include('navbar') %> 
+  <table>
+    <tbody>
+        <tr>
+            <th>SN</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Due Date</th>
+            <th>Status</th>
+            <th>Image </th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Task 1</td>
+            <td>Description</td>
+            <td>2024-09-01</td>
+            <td>Incomplete</td>
+            <td>Image</td>
+            <td><a href=""><button>Showmore</button></a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Task 1</td>
+            <td>Description</td>
+            <td>2024-09-01</td>
+            <td>Incomplete</td>
+            <td>Image</td>
+            <td><a href=""><button>Showmore</button></a></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Task 1</td>
+            <td>Description</td>
+            <td>2024-09-01</td>
+            <td>Incomplete</td>
+            <td>Image</td>
+            <td><a href=""><button>Showmore</button></a></td>
+        </tr>
+
+    </tbody>
+</table>
+  <%- include('footer') %>
+
+</body>
+</html>

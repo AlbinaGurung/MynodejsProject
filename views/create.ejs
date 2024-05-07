@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+    width: 60%;
+    display: flex;
+   flex-direction: column;
+    height:100%;
+    background-color:cornflowerblue;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    
+    border-radius: 6px;
+    margin-top: 150px;
+    
+}
+body{
+   
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+.form-input{
+    font-size: 25px;
+    width: 700px;
+    height: 60px;
+    padding: 40px;
+    background-color:lightblue;
+    margin: 30px;
+    
+}
+.form-input-box
+{
+    width: 700px;
+    height: 50px;
+   
+
+}
+
+</style>
+   
+      
+</head>
+<body>
+    <%- include('navbar') %>
+    <div class="container">
+        <form action="/blog" method="POST" enctype="multipart/form-data">
+            <div class="form-input">
+                <label for="Title">Title</label>
+                <input type="text" class="form-input-box" name="title" id="title" required>
+            </div>
+            <div class="form-input">
+                <label for="Subtitle">Description</label>
+               <input type="text" class="form-input-box" name="subtitle" id="subtitle"required>
+            </div>
+            <div class="form-input">
+                <label for="Description">Due Date</label>
+                <input type="date" class="form-input-box" name="description" id="description"required>
+            </div>
+            <div class="form-input">
+                <label for="Image">Image</label>
+                <input type="file" class="form-input-box" name="Image" id="Image">
+            </div>
+            <div>
+                <input type="submit" value="submit" style="height: 40px; width: 100px; border-radius: 5px; background-color: lightgreen; color: black; font-size: 25px; margin-left: 30px;">
+            </div>
+        </form>
+    </div>
+    <%- include('footer') %>
+
+</body>
+</html>
