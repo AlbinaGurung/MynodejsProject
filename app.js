@@ -17,6 +17,11 @@ app.get('/Create',(request,response)=>{
 response.render('create.ejs')
 });
 
+app.get('/Show',(request,response)=>
+{
+    response.render('show.ejs')
+})
+
 app.listen(3000,"127.0.0.1");
 //Our project will listen to port 3000 i.e port no 3000 will be given to 
 //our project
