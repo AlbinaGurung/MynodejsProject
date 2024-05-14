@@ -13,14 +13,20 @@ response.render('home.ejs')
 app.get('/About',(request,response)=>{
     response.render('about.ejs')
 })
+
 app.get('/Create',(request,response)=>{
 response.render('create.ejs')
 });
+app.get('/contact',(request,response)=>{
+    response.render('home.ejs')
+})
 
 app.get('/Show',(request,response)=>
 {
     response.render('show.ejs')
 })
+
+//solution=>nodemon
 
 app.listen(3000,"127.0.0.1");
 //Our project will listen to port 3000 i.e port no 3000 will be given to 
